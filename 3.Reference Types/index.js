@@ -10,6 +10,7 @@ do {
 
 // OBJECTS
 
+/*
 const person = {
     Firstname: 'John',
     Lastname: 'Wick',
@@ -25,3 +26,16 @@ const person = {
 
 console.log(person.tagline);
 console.log(person.friends[Math.random() * person.friends.length | 0]);
+*/
+
+// CALLBACK FUNCTIONS
+function showCallFunc(fn) {
+    const i = 10;
+    fn(i);
+}
+
+function callbackFunc(value) {
+    console.log(value)
+}
+
+showCallFunc(callbackFunc);
