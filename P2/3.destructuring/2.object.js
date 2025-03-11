@@ -22,3 +22,9 @@ const person = {
   
   // Your task is to use object destructuring to extract the name, age, and country properties from the person object.
   // After extracting the properties, log each variable's value to the console.
+
+  // Solution
+  const {name, age, country} = person;
+  console.log(`Name: ${name}`)
+  console.log(`Age: ${age}`)
+    console.log(`Country: ${country}`)
