@@ -8,3 +8,9 @@ const infinityStoneColors = (...colors) => {
 }
 
 infinityStoneColors('red', 'blue', 'green', 'yellow', 'orange', 'purple', 'black');
+
+
+// Notes 
+// Rest operator is used to pass infinite number of arguments to a function
+// Rest operator is used to pass an array to a function
+// Rest operator is used to pass an object to a function
