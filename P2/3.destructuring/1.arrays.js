@@ -1,1 +1,6 @@
-// Destructuring is a way to extract values from objects and arrays and bind them to variables in a more concise way.
+// Destructuring Arrays
+ 
+const DesktopEnvironments = ['GNOME','KDE','Hyprland','XCFE','Cinnamon','MATE','Unity'];
+
+const [bloat, mid, GOAT, ...low] = DesktopEnvironments;
+console.log(GOAT, mid, bloat, ...low);
