@@ -19,8 +19,7 @@ const person = {
     company: 'High Table',
     aka: 'The Boogeyman',
     isretired: false,
-    tagline: 'John Wick is a man of focus, commitment, and sheer fucking will.'
+    tagline: 'John is a man of focus, commitment, and sheer fucking will.'
 };
 
-console.log(person.Firstname + ' ' + person.Lastname);
 console.log(person.tagline);
