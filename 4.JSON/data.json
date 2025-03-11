@@ -1,0 +1,13 @@
+{
+    "name": "Zach Latta",
+    "email": "zach@hackclub.com",
+    "hobbies": ["coding", "hacking", "reading","building cool stuff", "helping others"],
+    "address":{ 
+        "street": "8605 Santa Monica Blvd #86294",
+        "city": "West Hollywood",
+        "state": "CA",
+        "zip": "90069"
+    },
+    "hackclubber": true,
+    "position": "founder"
+}   
