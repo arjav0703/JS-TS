@@ -52,10 +52,10 @@ while (i <= 10) {
     //i++;
 }
 */
-/*
+
 let i = 20;
 do {
     console.log('arjav', i);
     i++;
 } while (i <= 400);
-*/
+
