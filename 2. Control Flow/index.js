@@ -17,13 +17,17 @@ if (password.length < 8) {
 
 let fruit = 'Apple';
 
-switch (fruit.toLowerCase) {
+switch (fruit.toLowerCase()) {
     case 'apple':
-        console.log('How you like them apples?')
+        console.log('How you like them apples?');
+        break;
     case 'orange':
-        console.log('Not a fan of oranges')
+        console.log('Not a fan of oranges');
+        break;
     case 'banana':
-        console.log('Bananas are kinda mid')
+        console.log('Bananas are kinda mid');
+        break;
     default:
-        console.log('ahh! never heard of that fruit :(')
+        console.log('ahh! never heard of that fruit :(');
+        break;
 }
