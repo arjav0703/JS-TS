@@ -26,23 +26,10 @@ const person = {
     tagline: 'John is a man of focus, commitment, and sheer fuckin will.',
     greet,
 };
-const person3 = {
-    Firstname: 'John',
-    Lastname: 'WDoe',
-    age: 40,
-    city: 'New York',
-    proffession: 'Assassin',
-    company: 'High Table',
-    aka: 'The Boogeyman',
-    friends: ['Winston', 'Charon', 'Sofia'],
-    isretired: false,
-    tagline: 'John is a man of focus, commitment, and sheer fuckin will.',
-    greet,
-};
 
 console.log(person.tagline);
 console.log(person.friends[Math.random() * person.friends.length | 0]);
-console.log(person3.greet())
+console.log(person.greet())
 
 // CALLBACK FUNCTIONS
 /*
