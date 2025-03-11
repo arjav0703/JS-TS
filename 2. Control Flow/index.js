@@ -37,7 +37,16 @@ switch (fruit.toLowerCase()) {
 }
 */
 
-// FOR LOOPS 
+// FOR LOOPS
+/*
 for (let i = 1; i <= 5; i++) {
     console.log('value:', i);
+}
+*/
+
+// WHILE LOOPS
+let i = 1;
+while (i <= 10) {
+    console.log('value:', i);
+    //i++;
 }
