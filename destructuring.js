@@ -1,0 +1,1 @@
+// Destructuring is a way to extract values from objects and arrays and bind them to variables in a more concise way.
