@@ -12,10 +12,11 @@ console.log('Hello, World!')
 //const firstName = 'Arjav'
 //const lastName = 'Jain'
 
-const firstName = prompt("What's your first name?");
-const lastName = prompt("What's your last name")
+const fullName = prompt("What's your name?");
+let [firstName, lastName] = fullName.split(' ')
 
-console.log(initials(firstName,lastName) + 'can be used as your initial!')
+//console.log(firstName)
+console.log(initials(firstName,lastName) + ' can be used as your initial!')
 
 function initials(firstName, lastName) {
     return firstName.slice(0,1) + lastName.slice(0,1);
