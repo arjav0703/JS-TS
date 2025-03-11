@@ -1,4 +1,5 @@
-/*
+// IF and ELSE STATEMENTS
+/* 
 let password; 
 
 password = prompt('Set a password between 8 to 12 characters')
@@ -15,6 +16,9 @@ if (password.length < 8) {
 }
 */
 
+
+// Switches
+/*
 let fruit = 'Apple';
 
 switch (fruit.toLowerCase()) {
@@ -31,3 +35,6 @@ switch (fruit.toLowerCase()) {
         console.log('ahh! never heard of that fruit :(');
         break;
 }
+*/
+
+// FOR LOOPS 
