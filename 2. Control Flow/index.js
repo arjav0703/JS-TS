@@ -45,8 +45,17 @@ for (let i = 1; i <= 5; i++) {
 */
 
 // WHILE LOOPS
+/*
 let i = 1;
 while (i <= 10) {
     console.log('value:', i);
     //i++;
 }
+*/
+/*
+let i = 20;
+do {
+    console.log('arjav', i);
+    i++;
+} while (i <= 400);
+*/
