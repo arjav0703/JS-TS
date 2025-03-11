@@ -1,4 +1,5 @@
 // Destructuring Arrays
+// Note. in array, destructuring, the variable name does not have to match the key name in the object. order matters.
  
 // const DesktopEnvironments = ['GNOME','KDE','Hyprland','XCFE','Cinnamon','MATE','Unity'];
 

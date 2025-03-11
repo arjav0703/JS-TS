@@ -1,4 +1,5 @@
 // Object destructuring
+// Note, in object destructuring, the variable name must match the key name in the object. order does not matter.
 const person = {
     name: 'Jared',
     age: 30,
