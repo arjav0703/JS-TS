@@ -1,3 +1,6 @@
 const strArray = ['eat', 'sleep', 'code', 'repeat'];
-
-console.log(strArray[1]);
+let i= 0;
+do {
+  console.log(strArray[i]);
+  i++;
+} while (i < strArray.length);
