@@ -18,8 +18,10 @@ const person = {
     proffession: 'Assassin',
     company: 'High Table',
     aka: 'The Boogeyman',
+    friends: ['Winston', 'Charon', 'Sofia'],
     isretired: false,
     tagline: 'John is a man of focus, commitment, and sheer fucking will.'
 };
 
 console.log(person.tagline);
+console.log(person.friends[Math.random() * person.friends.length | 0]);
