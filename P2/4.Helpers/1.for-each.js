@@ -15,4 +15,6 @@ adr = arr => {
 }
 
 arr.forEach(adr);
+
+console.log(arr);
 console.log(s);
