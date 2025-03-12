@@ -17,3 +17,9 @@ const specs = [
 ]
 
 console.log(specs.filter(res => res.hdd >= 500))
+
+
+// Challenge : Filter the numbers over 18 (adult)
+const ages = [32, 33, 16, 40];
+
+console.log( ages.filter(num => num > 18))
