@@ -4,17 +4,24 @@
 // Syntax:
 // condition ? ifTrueExpr : elseExpr
 
-let password = 8;
+// let password = 8;
 
-// function passwordChecker(ps) {
-  // if (ps === 8) {
-  //     return "Strong Password"
-  // } else {
-  //     return "Password should be 8 characters"
-  // }
+// // function passwordChecker(ps) {
+//   // if (ps === 8) {
+//   //     return "Strong Password"
+//   // } else {
+//   //     return "Password should be 8 characters"
+//   // }
 
-passwordChecker = ps => {
-  return  ps === 8 ? "Strong Password" : "Password should be 8 at least characters";
-}
+// passwordChecker = ps => {
+//   return  ps === 8 ? "Strong Password" : "Password should be 8 at least characters";
+// }
 
-console.log(passwordChecker(password)); 
+// console.log(passwordChecker(password)); 
+
+// Challenge
+m = 10; 
+p= 12;
+
+const affbility = (m, p) => (m >= p) ? 'Buy product' : 'Insufficient balance';
+console.log(affbility(m,p))
