@@ -1,9 +1,22 @@
 "use strict";
 // let array: any[];
-const vidisha = {
-    name: "Vidisha",
-    postalcode: 464001,
-    population: undefined,
-    state: "Madhya Pradesh",
+const arc = (user) => {
+    if (user.role === "admin" || user.role === "owner") {
+        return true;
+    }
+    else
+        return false;
 };
-console.log(`The city of ${vidisha.name} (${vidisha.postalcode}) is in the state of ${vidisha.state}`);
+const arjav = {
+    uname: "arjav0703",
+    name: "Arjav",
+    age: 15,
+    email: "arjav@hackclub.app",
+    role: "owner",
+};
+if (arc(arjav)) {
+    console.log(`Access granted to ${arjav.uname}`);
+}
+else {
+    console.log(`Access denied to ${arjav.uname}`);
+}

@@ -26,20 +26,50 @@
 // typefunc(variable);
 
 // ++++++ CREATING CUSTOM TYPES
-type city = {
+// type city = {
+//   name: string;
+//   postalcode: number;
+//   population: number | undefined;
+//   state: string;
+// };
+
+// const vidisha: city = {
+//   name: "Vidisha",
+//   postalcode: 464001,
+//   population: undefined,
+//   state: "Madhya Pradesh",
+// };
+
+// console.log(
+//   `The city of ${vidisha.name} (${vidisha.postalcode}) is in the state of ${vidisha.state}`,
+// );
+
+interface User {
+  uname: string;
   name: string;
-  postalcode: number;
-  population: number | undefined;
-  state: string;
+  age: number;
+  email: string;
+}
+interface internaluser extends User {
+  role: string;
+}
+
+const arc: Function = (user: internaluser) => {
+  if (user.role === "admin" || user.role === "owner") {
+    return true;
+  } else return false;
 };
 
-const vidisha: city = {
-  name: "Vidisha",
-  postalcode: 464001,
-  population: undefined,
-  state: "Madhya Pradesh",
+const arjav: internaluser = {
+  uname: "arjav0703",
+  name: "Arjav",
+  age: 15,
+  email: "arjav@hackclub.app",
+  role: "owner",
 };
 
-console.log(
-  `The city of ${vidisha.name} (${vidisha.postalcode}) is in the state of ${vidisha.state}`,
-);
+if (arc(arjav)) {
+  console.log(`Access granted to ${arjav.uname}`);
+} else {
+  console.log(`Access denied to ${arjav.uname}`);
+}
