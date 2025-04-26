@@ -13,14 +13,28 @@
 // myvar = "Hello";
 // console.log(myvar.length);
 
-let typefunc: Function;
-typefunc = (x: string | number | null) => {
-  if (typeof x === "string")
-    console.log(x.toUpperCase(), console.log(typeof x));
-  else if (typeof x === "number")
-    console.log(x.toString(), console.log(typeof x));
-  else console.log("the value is null");
+// let typefunc: Function;
+// typefunc = (x: string | number | null) => {
+//   if (typeof x === "string")
+//     console.log(x.toUpperCase(), console.log(typeof x));
+//   else if (typeof x === "number")
+//     console.log(x.toString(), console.log(typeof x));
+//   else console.log("the value is null");
+// };
+
+// const variable = 23;
+// typefunc(variable);
+
+type city = {
+  name: string;
+  postalcode: number;
+  population: number;
+  state: string;
 };
 
-const variable = 23;
-typefunc(variable);
+const vidisha: city = {
+  name: "Vidisha",
+  postalcode: 464001,
+  population: 100000,
+  state: "Madhya Pradesh",
+};
