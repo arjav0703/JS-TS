@@ -44,32 +44,64 @@
 //   `The city of ${vidisha.name} (${vidisha.postalcode}) is in the state of ${vidisha.state}`,
 // );
 
-interface User {
-  uname: string;
-  name: string;
-  age: number;
-  email: string;
-}
-interface internaluser extends User {
-  role: string;
+// interface User {
+//   uname: string;
+//   name: string;
+//   age: number;
+//   email: string;
+// }
+// interface internaluser extends User {
+//   role: string;
+// }
+
+// const arc: Function = (user: internaluser) => {
+//   if (user.role === "admin" || user.role === "owner") {
+//     return true;
+//   } else return false;
+// };
+
+// const arjav: internaluser = {
+//   uname: "arjav0703",
+//   name: "Arjav",
+//   age: 15,
+//   email: "arjav@hackclub.app",
+//   role: "owner",
+// };
+
+// if (arc(arjav)) {
+//   console.log(`Access granted to ${arjav.uname}`);
+// } else {
+//   console.log(`Access denied to ${arjav.uname}`);
+// }
+
+class MyPC {
+  model = "Dell Optiplex 7040";
+  ram = 16;
+  cpu = "i5-6500T";
+  gpu = "Intel HD 530";
+  wifi = false;
+  bluetooth = true;
+  os = "Arch Linux";
+
+  wlan0_on() {
+    console.log("Powering on...");
+    this.wifi = true;
+    if (this.wifi) {
+      console.log("WLAN0 is now ON");
+    }
+  }
+  blue_off() {
+    console.log("Powering off...");
+    this.bluetooth = false;
+    if (!this.bluetooth) {
+      console.log("Bluetooth is now OFF");
+    }
+  }
 }
 
-const arc: Function = (user: internaluser) => {
-  if (user.role === "admin" || user.role === "owner") {
-    return true;
-  } else return false;
-};
+let archie = new MyPC();
 
-const arjav: internaluser = {
-  uname: "arjav0703",
-  name: "Arjav",
-  age: 15,
-  email: "arjav@hackclub.app",
-  role: "owner",
-};
+archie.wlan0_on();
 
-if (arc(arjav)) {
-  console.log(`Access granted to ${arjav.uname}`);
-} else {
-  console.log(`Access denied to ${arjav.uname}`);
-}
+let archcraft = new MyPC();
+console.log(`the ram is ${archcraft.ram}GB`);
