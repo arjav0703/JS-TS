@@ -91,13 +91,13 @@ archie.wlan0_on();
 let archcraft = new MyPC();
 console.log(`the ram is ${archcraft.ram}GB\n`);
 class linux extends MyPC {
-    constructor() {
-        super(...arguments);
-        this.distro = "Alpine";
-        this.usesgnu = false;
+    constructor(distro, usesgnu) {
+        super();
+        this.distro = distro;
+        this.usesgnu = usesgnu;
     }
 }
-const mylap = new linux();
+const mylap = new linux("alpine", false);
 if (mylap.usesgnu) {
     console.log(`GNU/Linux is used in ${mylap.distro}`);
 }

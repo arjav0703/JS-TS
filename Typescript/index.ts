@@ -105,11 +105,16 @@ let archcraft = new MyPC();
 console.log(`the ram is ${archcraft.ram}GB\n`);
 
 class linux extends MyPC {
-  distro = "Alpine";
-  usesgnu = false;
+  public distro: string;
+  public usesgnu: boolean;
+  constructor(distro: string, usesgnu: boolean) {
+    super();
+    this.distro = distro;
+    this.usesgnu = usesgnu;
+  }
 }
 
-const mylap = new linux();
+const mylap = new linux("alpine", false);
 if (mylap.usesgnu) {
   console.log(`GNU/Linux is used in ${mylap.distro}`);
 } else {
