@@ -39,3 +39,7 @@ const vidisha: city = {
   population: undefined,
   state: "Madhya Pradesh",
 };
+
+console.log(
+  `The city of ${vidisha.name} (${vidisha.postalcode}) is in the state of ${vidisha.state}`,
+);
