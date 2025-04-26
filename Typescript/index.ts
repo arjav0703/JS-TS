@@ -25,16 +25,17 @@
 // const variable = 23;
 // typefunc(variable);
 
+// ++++++ CREATING CUSTOM TYPES
 type city = {
   name: string;
   postalcode: number;
-  population: number;
+  population: number | undefined;
   state: string;
 };
 
 const vidisha: city = {
   name: "Vidisha",
   postalcode: 464001,
-  population: 100000,
+  population: undefined,
   state: "Madhya Pradesh",
 };
