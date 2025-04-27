@@ -61,46 +61,52 @@
 // } else {
 //   console.log(`Access denied to ${arjav.uname}`);
 // }
-class MyPC {
-    constructor() {
-        this.model = "Dell Optiplex 7040";
-        this.ram = 16;
-        this.cpu = "i5-6500T";
-        this.gpu = "Intel HD 530";
-        this.wifi = false;
-        this.bluetooth = true;
-        this.os = "Arch Linux";
-    }
-    wlan0_on() {
-        console.log("Powering on...");
-        this.wifi = true;
-        if (this.wifi) {
-            console.log("WLAN0 is now ON");
-        }
-    }
-    blue_off() {
-        console.log("Powering off...");
-        this.bluetooth = false;
-        if (!this.bluetooth) {
-            console.log("Bluetooth is now OFF");
-        }
-    }
+// class MyPC {
+//   model = "Dell Optiplex 7040";
+//   ram = 16;
+//   cpu = "i5-6500T";
+//   gpu = "Intel HD 530";
+//   wifi = false;
+//   bluetooth = true;
+//   os = "Arch Linux";
+//   wlan0_on() {
+//     console.log("Powering on...");
+//     this.wifi = true;
+//     if (this.wifi) {
+//       console.log("WLAN0 is now ON");
+//     }
+//   }
+//   blue_off() {
+//     console.log("Powering off...");
+//     this.bluetooth = false;
+//     if (!this.bluetooth) {
+//       console.log("Bluetooth is now OFF");
+//     }
+//   }
+// }
+// let archie = new MyPC();
+// archie.wlan0_on();
+// let archcraft = new MyPC();
+// console.log(`the ram is ${archcraft.ram}GB\n`);
+// class linux extends MyPC {
+//   public distro: string;
+//   public usesgnu: boolean;
+//   constructor(distro: string, usesgnu: boolean) {
+//     super();
+//     this.distro = distro;
+//     this.usesgnu = usesgnu;
+//   }
+// }
+// const mylap = new linux("alpine", false);
+// if (mylap.usesgnu) {
+//   console.log(`GNU/Linux is used in ${mylap.distro}`);
+// } else {
+//   console.log(`GNU/Linux is not used in ${mylap.distro}`);
+// }
+function createEmployee(name, pronouns) {
+    console.log(`${name} joined the team!`);
+    pronouns
+        ? console.log(`${pronouns} pronouns`)
+        : console.log(`No pronouns provided`);
 }
-let archie = new MyPC();
-archie.wlan0_on();
-let archcraft = new MyPC();
-console.log(`the ram is ${archcraft.ram}GB\n`);
-class linux extends MyPC {
-    constructor(distro, usesgnu) {
-        super();
-        this.distro = distro;
-        this.usesgnu = usesgnu;
-    }
-}
-const mylap = new linux("alpine", false);
-if (mylap.usesgnu) {
-    console.log(`GNU/Linux is used in ${mylap.distro}`);
-}
-else {
-    console.log(`GNU/Linux is not used in ${mylap.distro}`);
-}
+createEmployee("Arjav", "they/them");
