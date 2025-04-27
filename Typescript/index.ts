@@ -121,11 +121,14 @@
 //   console.log(`GNU/Linux is not used in ${mylap.distro}`);
 // }
 
-function createEmployee(name: string, pronouns?: string) {
-  console.log(`${name} joined the team!`);
-  pronouns
-    ? console.log(`${pronouns} pronouns`)
-    : console.log(`No pronouns provided`);
-}
+// function createEmployee(name: string, pronouns?: string) {
+//   console.log(`${name} joined the team!`);
+//   pronouns
+//     ? console.log(`${pronouns} pronouns`)
+//     : console.log(`No pronouns provided`);
+// }
 
-createEmployee("Arjav", "they/them");
+// createEmployee("Arjav", "they/them");
+
+type distro = "Arch Linux" | "Ubuntu" | "Debian" | "Fedora" | "CentOS";
+const mydistro: distro = "Arch Linux";
